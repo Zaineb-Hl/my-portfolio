@@ -3,8 +3,8 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 
 const socialLinks = [
-  { icon: FaGithub, href: "#", label: "GitHub" },
-  { icon: FaLinkedin, href: "#", label: "LinkedIn" },
+  { icon: FaGithub, href: "https://github.com/Zaineb-Hl", label: "GitHub" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/zaineb-helal-811257162", label: "LinkedIn" },
 ];
 
 const footerLinks = [
