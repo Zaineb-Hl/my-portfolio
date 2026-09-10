@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+
 const projects = [
   {
     title: "IoT Monitoring Platform",
@@ -8,7 +9,8 @@ const projects = [
       "A full-stack web application for managing and supervising embedded systems, built during my end-of-studies internship. Features role-based access control, a per-sensor rule engine for threshold monitoring and automatic alerts, measurement quality validation before persistence, and an in-memory caching layer for fast access to recent data.",
     image: "/projects/iot-monitor.png",
     tags: ["Angular 19", "Spring Boot", "Spring Security", "JWT", "Hazelcast", "MySQL"],
-    github: "https://github.com/Zaineb-Hl/Embedded-Systems-Management-Web-Application---Backend",
+    githubBackend: "https://github.com/Zaineb-Hl/Embedded-Systems-Management-Web-Application---Backend",
+    githubFrontend: "https://github.com/Zaineb-Hl/Embedded-Systems-Management-Web-Application---Frontend",
   },
   {
     title: "Yummy Restaurant",
@@ -16,7 +18,8 @@ const projects = [
       "A full-stack restaurant management application with modules for dishes, chefs, users, testimonials, and reservations, including a full reservation tracking and status system. Secured with JWT authentication and role-based access for Admin and Client users.",
     image: "/projects/yummy-restaurant.png",
     tags: ["Angular 19", "Spring Boot", "Spring Security", "Hibernate/JPA", "MySQL"],
-    github: "https://github.com/Zaineb-Hl/Yummy-restaurant---Backend",
+    githubBackend: "https://github.com/Zaineb-Hl/Yummy-restaurant---Backend",
+    githubFrontend: "https://github.com/Zaineb-Hl/Yummy-restaurant---Frontend",
   },
   {
     title: "Deluxe Hotels",
@@ -25,7 +28,8 @@ const projects = [
     image: "/projects/deluxe-hotels.png",
     tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     link: "",
-    github: "https://github.com/Zaineb-Hl/Hotel-Reservation-Backend", 
+    githubBackend: "https://github.com/Zaineb-Hl/Hotel-Reservation-Backend",
+    githubFrontend: "",
   },
   {
     title: "Car Rental Management API",
@@ -34,16 +38,8 @@ const projects = [
     image: "/projects/car-rental-api.png",
     tags: ["Node.js", "Express", "MySQL"],
     link: "#",
-    github: "https://github.com/Zaineb-Hl/gestion-voitures-api",
-  },
-  {
-    title: "Sports Management App",
-    description:
-      "A web application for managing teams, players, and matches, with user registration and authentication handled through Spring Security.",
-    image: "/projects/sport-app.png",
-    tags: ["Angular 19", "Spring Boot", "Spring Security", "Hibernate/JPA", "MySQL"],
-    link: "#",
-    github: "#", 
+    githubBackend: "https://github.com/Zaineb-Hl/gestion-voitures-api",
+    githubFrontend: "",
   },
 ];
 
@@ -101,11 +97,21 @@ export const Projects = () => {
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
-                    href={project.github}
+                    href={project.githubBackend}
+                    title="Backend repo"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <FaGithub className="w-5 h-5" />
                   </a>
+                  {project.githubFrontend && (
+                    <a
+                      href={project.githubFrontend}
+                      title="Frontend repo"
+                      className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    >
+                      <FaGithub className="w-5 h-5" />
+                    </a>
+                  )}
                 </div>
               </div>
 
