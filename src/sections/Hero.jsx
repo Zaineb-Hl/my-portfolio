@@ -69,16 +69,16 @@ export const Hero = () => {
                         {/* Headline */}
                         <div className="space-y-4">
                             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                                Crafting <span className="text-primary glow-text">digital</span>
+                                Building <span className="text-primary glow-text">web</span>
                                 <br />
-                                experiences with
+                                solutions with
                                 <br />
                                 <span className="font-serif italic font-normal text-white">
                                     precision.
                                 </span>
                             </h1>
                             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                                Hi, I'm Zaineb Helal — a junior full-stack developer specializing in Java, Spring Boot, Angular, and React.
+                                Hi, I'm Zaineb Helal — a junior web developer specializing in Java, Spring Boot, Angular, and React.
                                 I build modern, scalable web applications with a focus on clean code, intuitive user experiences, and real-world solutions.
 
                             </p>
@@ -86,9 +86,11 @@ export const Hero = () => {
 
                         {/* CTAs */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+                            <a href="#contact">
                             <Button size="lg">
                                 Contact Me <ArrowRight className="w-5 h-5" />
                             </Button>
+                            </a>
                             <AnimatedBorderButton>
                                 <Download className="w-5 h-5" />
                                 Download CV
